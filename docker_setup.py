@@ -47,6 +47,8 @@ def init():
 
 	with open('local_settings.py', 'wb+') as C:
 		C.write('\n'.join(local_settings))
+	
+	print("wrote local_settings", local_settings)
 
 if __name__ == "__main__": 
 	if len(argv) != 2: 

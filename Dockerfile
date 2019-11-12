@@ -36,7 +36,7 @@ VOLUME ["/data"]
 RUN apt-get install -yq python-dev python-pip libgeos-dev git
 
 # Add the crowdata application to the image
-ADD . /crowdata
+COPY . /crowdata
 WORKDIR /crowdata
 
 # Install python deps
