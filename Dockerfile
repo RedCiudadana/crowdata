@@ -33,7 +33,7 @@ VOLUME ["/data"]
 
 # Crowdata-specific install starts here...
 # Install requirements
-RUN apt-get install -yq python-dev python-pip libgeos-dev
+RUN apt-get install -yq python-dev python-pip libgeos-dev git
 
 # Add the crowdata application to the image
 ADD . /crowdata

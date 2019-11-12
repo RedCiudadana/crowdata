@@ -48,11 +48,14 @@ def init():
 	with open('local_settings.py', 'wb+') as C:
 		C.write('\n'.join(local_settings))
 
-if __name__ == "__main__": main()
-	if len(argv) != 2: exit(-1)
+if __name__ == "__main__": 
+	if len(argv) != 2: 
+		exit(-1)
 
-	if argv[1] == "-init": init()
-	elif argv[1] == "-db_pop": dbPop()
-	else: exit(-1)
-
-	exit(0)
+	if argv[1] == "-init": 
+		init()
+	elif argv[1] == "-db_pop": 
+		dbPop()
+	else: 
+		exit(-1)
+exit(0)
